@@ -1,0 +1,110 @@
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x:auto;
+
+}
+.mobile-container{
+  z-index: 50;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+html::-webkit-scrollbar-thumb {
+  background: rgb(173, 216, 230);
+}
+body {
+    box-sizing: border-box;
+    
+    font-family: Roboto, sans-serif;;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    }
+
+.mobile-container{
+    display: none;
+  }
+@media screen and (max-width: 900px){
+
+  .mobile-container {
+    color: white;
+    display: inline;
+    margin-top: 50px;
+    width: 100%;
+    border-top: 7px solid #26327A;
+    border-bottom: 7px solid #26327A;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #ADD8E6;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    border-bottom: 7px solid #26327A;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav a {
+    color: black;
+    padding: 15px 265px 10px 265px ;
+    text-decoration: none;
+    align-items: center;
+    display: block;
+    background-color: #ADD8E6;
+  } 
+  .topnav a:hover{
+    background-color: #26327A;
+    color: white;
+  }
+  
+  .mainmenu, .submenu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+    .mainmenu a {
+      display: block;
+      border-radius: 15px;
+      z-index: 100;
+      background-color: #ADD8E6;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px;
+      color: #000;
+    }
+    .mainmenu a:hover {
+        background-color: #26327A;
+
+        color: white;
+    }
+    .mainmenu li:hover .submenu {
+      display: block;
+      max-height: 200px;
+    }
+    .submenu a {
+      background-color: ghostwhite;
+    }
+    .submenu a:hover {
+      background-color: #26327A;
+      color: white;
+    }
+    .submenu {
+      overflow: hidden;
+      max-height: 0;
+      -webkit-transition: all 0.5s ease-out;
+    }
+}
+@media screen and (max-width: 823px){
+  .mobile-container{
+    margin-top: 170px;
+  }
+}

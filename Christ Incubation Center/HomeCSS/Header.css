@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  top: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  list-style: none;
+}
+
+.dropdown-content ul {
+  list-style: none;
+}
+
+.iframe[seamless] {
+  border: none;
+}
+
+header .BANNER {
+  position: initial !important;
+}
+
+.BANNER {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.BANNER .LOGOS {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin: 10px 20px;
+}
+
+.LOGOS .CHRISTLOGO {
+  margin: 0;
+  z-index: 1;
+}
+
+.LOGOS .CICLOGO {
+  z-index: 1;
+  margin: 0;
+}
+
+.CICLOGO img,
+.CHRISTLOGO img {
+  width: 300px;
+}
+
+.BANNER .navbar {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-top: 10px solid #26327A;
+  background-color: #ADD8E6;
+}
+
+.navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+#abo {
+  padding-top: 0px !important;
+  padding-bottom: 47px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.dropdown .dropbox {
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: auto;
+  box-shadow: 0px 8px 16px 0px #26327A;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+
+/* Small screens (up to 576px) */
+@media (max-width: 576px) {
+  header {
+    font-size: 13px;
+  }
+
+  .LOGOS .CHRISTLOGO img,
+  .LOGOS .CICLOGO img {
+    width: 200px;
+  }
+
+  .navbar a {
+    padding: 10px;
+  }
+
+  .dropdown .dropbox {
+    padding: 10px;
+  }
+
+  .dropdown-content a {
+    padding: 8px 16px;
+  }
+}

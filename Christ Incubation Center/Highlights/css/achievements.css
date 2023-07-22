@@ -1,0 +1,94 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.news-heading{
+    width: 100%;
+    height: 5em;
+    color: rgb(57, 99, 155);
+    font-size: 25px;
+    background-color: whitesmoke;
+    margin-top: 178px;
+    margin-bottom: 50px;
+}
+
+.news-heading h1{
+    position: relative;
+    top: 25%;
+}
+
+.ncontainer{
+    width: 75%;
+    height: 300px;
+    /* border: 3px solid black; */
+    display: flex;
+    margin: 0px 25px 50px 25px;
+    /* margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px; */
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    transition-duration: .6s;
+    transition-timing-function: ease-out;
+}
+
+.news-text{
+    margin-left: 20px;
+    height: 296px;
+    width: 75%;
+    background-color: whitesmoke;
+    text-align: left !important;
+}
+
+.news-text p{
+    text-align: justify !important;
+    padding-right: 15px;
+}
+
+.flip-card {
+    /* justify-content: center;
+    text-align: center;
+    vertical-align: middle; */
+    background-color: transparent;
+    width: 300px;
+    height: 296px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color:white;
+    color: black;
+    border-radius: 10px 0px 0px 10px;
+  }
+  
+  .flip-card-back {
+    background-color: rgb(57, 99, 155);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px 0px 0px 10px;
+  }

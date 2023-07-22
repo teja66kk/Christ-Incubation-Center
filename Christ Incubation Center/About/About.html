@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<!-- CSS and  JS STARTS -->  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=100%, initial-scale=1.0">
+    
+  </body>
+  </html>
+  <title>CHRIST INCUBATION CENTRE</title>
+
+  <link rel="stylesheet" href="/HomeCSS/Menu.css">
+
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<script src="/HomeCSS/w3.js"></script>
+<script src="/HomeCSS/script.js"></script>
+<!-- CSS and JS ENDS -->
+
+<!-- PAGE BODY STARTS -->  
+    <body>  
+<!-- PAGE STARTS-->  
+          <div w3-include-html="/nabar.html"></div>
+
+<!-- Text and image Starts -->
+<center>
+<div class="about-heading" id="header">
+  <h1>About us</h1>
+</div>
+</center>
+
+<div class="benny" id="coordinator">
+  <img src="/About/benny.jpg" alt="Hi">
+
+  <div class="benny_name">
+    <h3>Fr. Benny Thomas </h3>
+    <h5>Ex Campus Coordinator</h5>
+    <p>" Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum <br> epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum 
+      Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum Lorem epsum lorem epsum "</p>
+    
+    </div>
+
+  </div>
+
+  <center>
+  <div class="video" id="coordinatorop">
+    <video src="/PICS/vid.mp4" style="max-height: 400px; max-width: auto;"type="video/mp4" class="vid" id="vid2" loop autoplay ="true"  controls></video></div>
+
+  </center>
+  
+  <script>
+    let clip = document.querySelector(".vid")
+    
+
+/* Adding the event listeners on the video to play/pause the video. */
+
+
+/* Applying the mouse out event to pause the video */
+
+var autoPlayVideo = document.getElementById("vid2");
+    autoPlayVideo.oncanplaythrough = function() {
+        autoPlayVideo.muted = true;
+        
+        autoPlayVideo.play();
+        autoPlayVideo.pause();
+        autoPlayVideo.play();
+    }
+clip.addEventListener("mouseover", function (e) {
+this.play();
+this.volume += 1;
+})
+clip.addEventListener("mouseout", function (e) {
+   this.pause();
+})
+  </script>
+  
+  
+  
+    <div w3-include-html="/footer.html"></div>
+<!-- Footer Ends -->
+          
+<!--Page ENDS-->
+
+<!--  JS Starts -->          
+    <script>
+    w3.includeHTML();
+    </script>
+    
+<!--  JS Ends -->   
+        </body>
+<!-- PAGE BODY Ends -->
+</html> 

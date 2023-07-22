@@ -1,0 +1,105 @@
+.main{
+    width: 100%;
+    z-index: -1;
+    /* background-size: cover; */
+    }
+
+body {
+    margin: 0;
+    background-color: #e6e8ea;
+  }
+  @media (min-width: 1290px) {
+    .partitle{
+       margin-top: 240px !important;
+    }
+    
+  }
+.partitle{
+    background-color: #e6e8ea;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    margin: 0%;
+    margin-top: 16%;
+    padding-top: 39px;
+    font-size: 65px;
+    color: #39639B;
+}
+
+/* video box */
+.vid1{
+    width: 50%;
+    height: 250px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 7%;
+    border: 5px solid rgba(115, 115, 170, 0.877);
+    border-radius: 10px;
+}
+
+
+
+.titles{
+    font-size: 25px;
+}
+
+.content{
+    width: 100%;
+    margin-top: 2px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Roboto',sans-serif;
+    color: black;
+    font-size: 16px;
+    line-height: 33px;
+    text-align: justify;
+}
+
+.partitle span{
+    color: rgb(16,90,185,255);
+}
+
+.para{
+    align-items: center;
+    text-align: justify;
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    float:right;
+    font-family: 'Roboto',sans-serif;
+    line-height: 33px;
+    padding-left: 20px;
+}
+
+.div{
+    display: flex;
+    padding: 0px 65px;
+    margin: auto;
+}
+
+.left{
+    flex-direction: row-reverse;
+    background-color: rgb(238, 243, 246);
+    width: 100%;
+}
+
+.left .vid1, .right .vid1{
+    width: 50%;
+    margin-right: 10%;
+    
+}
+
+.right{
+    background-color:rgb(238, 243, 246);
+}
+
+.mar{
+    margin: 50px 0;
+}
+
+.demo{
+    margin-right: 20px;
+    padding-top: 20px;
+}

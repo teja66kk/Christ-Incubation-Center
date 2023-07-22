@@ -1,0 +1,30 @@
+
+@media (max-width: 1000px){
+     .container {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+    }
+    .container .VM{
+      padding-top: 50px;
+    }
+
+}
+@media(max-width: 940px){
+    .BANNER .navbar{
+      align-items: center;
+    }
+    
+}
+@media (max-width: 900px) {
+    .BANNER .TABGROUND {
+      flex-direction: column;
+      height: auto;
+    }
+    .BANNER .navbar{
+      display: none;
+    }
+   .BANNER .LOGOS{
+    justify-content: center;
+   }
+}

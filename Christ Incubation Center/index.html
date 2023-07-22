@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<!--CSS and JS STARTS-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=100%, initial-scale=1">
+  <title>CHRIST INCUBATION CENTRE</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="../HomeCSS/Menu.css">
+  <link rel="stylesheet" href="/home.css">
+</head>
+<script src="HomeCSS/script.js"></script>
+<script src="/HomeCSS/w3.js"></script>
+<!--CSS and JS ENDS-->
+
+<!--PAGE BODY STARTS -->
+
+<body>
+  <!--PAGE STARTS-->
+
+  <div w3-include-html="/nabar.html"></div>
+
+  <!-- Text and image Starts -->
+  <div>
+    <div id="contain" class="slideshow-container" style="margin-top: 10em;">
+
+      <div class="mySlides fade">
+        <img src="/PICS/IIIC.jpg" style="width:100%; height:500px">
+      </div>
+      <div class="mySlides fade">
+        <img src="/Blog/Images/blog.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/Blog/Images/blog3.jpeg" style="width:100%; height:500px;">
+      </div>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    <div class="Mainpage">
+      <div class="IIICtext">
+        <div class="leftcolumn">
+          <div calss="row">
+            <h1>Introduction</h1>
+            <p>
+              Industry Institute Interaction Cell (IIIC) has been incepted to provide the students a real-time industry
+              experience through various projects and case studies from the repositories of industry to ensure they are
+              well prepared. This evolution combined with intensive practical and applied research experiences through
+              industry oriented curriculum (IOC) provides a wider platform for students to get internships through
+              “FastTrack” program that would ensure students are placed. The cell also inculcates the need skill develop
+              program through certification programs for the students for innovation through applied research and
+              product development in niche areas of Data science, Artificial Intelligence, Robotics, Design Thinking,
+              Cyber Security Internet of Things and Network Security. We also mentor and support the incubation ideas
+              while providing infrastructure and financial help based on the mutual agreement.
+              <br><br>
+              The IIIC is a cell that would be one point contact for all industry based connects in any form while
+              providing technical knowledge, applied research, design thinking and inspiring students to take part in
+              industry oriented projects via innovation and research.
+            </p>
+          </div>
+          <br><br>
+          <div class="IIIClist">
+            <div class="IIIClist1">
+              <p>Salient Features:</p>
+
+              <ul>
+                <li>Academic & Management Excellence</li>
+                <li>Collaboration</li>
+                <li>Mentorship</li>
+                <li>Skill development and Training</li>
+                <li>Applied Research and Design Thinking</li>
+                <li>Partnership</li>
+              </ul>
+            </div>
+            <div class="IIIClist2">
+              <p>The activities supported are:</p>
+
+              <ul>
+                <li>Entrepreneurship and Innovation</li>
+                <li>Skill Development and Training</li>
+                <li>Industry Oriented Curriculum</li>
+                <li>Joint Research and Consultancy</li>
+                <li>External Funding</li>
+                <li>Centers of Excellence</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <img src="Blog/images/blog3.jpeg" style="min-height: 200px;">
+          <p>The brain creates noise to fill the silence.</p>
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg"><img src="Blog/Images/blog3.jpeg" alt=""></div><br>
+          <div class="fakeimg"><img src="BlogImages/blog3.jpeg" alt=""></div><br>
+          <div class="fakeimg"><img src="Blog/Images/blog3.jpeg" alt=""></div><br>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>facebook: </p>
+          <p>instagram:</p>
+        </div>
+      </div>
+      <section class="VISMIS" id="viss">
+        <div class="asd">
+          <div class="VTEXT">
+            <h3>VISION</h3>
+
+            <p>Excellence in applied research oriented entrepreneurship to serve<br> society</p>
+          </div>
+          <div class="MTEXT">
+
+            <h3>MISSION</h3>
+
+            <p>The Industry Institute Interaction Cell nurtures, academic excellence<br> and holistic development of the
+              students to be able to engage in<br> research, advocacy, and innovation</p>
+          </div>
+        </div>
+      </section>
+    </div>
+<br><br><br>
+    <!-- Text and image Ends -->
+  </div>
+  <!-- Footer Starts -->
+  <div w3-include-html="/footer.html"></div>
+  <!-- Footer Ends -->
+
+  <!--Page ENDS-->
+
+  <!--  JS Starts -->
+  <script>
+    w3.includeHTML();
+  </script>
+  <script>
+    let isMouseHover = false
+    let test = document.getElementById("contain");
+    test.addEventListener("mouseleave", function (event) {
+      isMouseHover = false
+    }, false);
+    test.addEventListener("mouseover", function (event) {
+      isMouseHover = true
+    }, false);
+    var slideIndex = 0;
+    showSlides();
+    function currentSlide(num) {
+      slideIndex = num;
+      showSlides();
+    }
+    setInterval(()=>{if (!isMouseHover)showSlides();}, 4000);
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <!--  JS Ends -->
+</body>
+<!--PAGE BODY ENDS-->
+
+</html>
